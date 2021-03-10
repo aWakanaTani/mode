@@ -27,6 +27,11 @@ export const counterReducer: Reducer<CounterState, CounterAction> = (
         ...state,
         count: state.count + 1,
       };
+    case Type.MUL:
+      return {
+        ...state,
+        count: state.count * (action.amount || 0),
+      };
     default: {
       const _: never = action.type;
 

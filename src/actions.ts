@@ -2,6 +2,7 @@ export const CounterActionType = {
   ADD: 'ADD',
   DECREMENT: 'DECREMENT',
   INCREMENT: 'INCREMENT',
+  MUL: 'MUL',
 } as const;
 
 type ValueOf<T> = T[keyof T];
@@ -22,4 +23,9 @@ export const decrement = (): CounterAction => ({
 
 export const increment = (): CounterAction => ({
   type: CounterActionType.INCREMENT,
+});
+
+export const mul = (amount: number): CounterAction => ({
+  type: CounterActionType.MUL,
+  amount,
 });

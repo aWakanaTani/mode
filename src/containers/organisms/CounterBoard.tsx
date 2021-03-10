@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { add, decrement, increment } from 'actions';
+import { add, decrement, increment, mul } from 'actions';
 import { CounterState } from 'reducer';
 import CounterBoard from 'components/organisms/CounterBoard';
 
@@ -15,6 +15,7 @@ const EnhancedCounterBoard: FC = () => {
       add={(amount: number) => dispatch(add(amount))}
       decrement={() => dispatch(decrement())}
       increment={() => dispatch(increment())}
+      mul={(amount: number) => dispatch(mul(amount))}
     />
   );
 };
