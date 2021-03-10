@@ -15,7 +15,7 @@ const EnhancedCounterBoard: FC = () => {
       add={(amount: number) => dispatch(add(amount))}
       decrement={() => dispatch(decrement())}
       increment={() => dispatch(increment())}
-      mul={(amount: number) => dispatch(mul(amount))}
+      mul2={(amount: number) => dispatch(mul(amount))}
     />
   );
 };

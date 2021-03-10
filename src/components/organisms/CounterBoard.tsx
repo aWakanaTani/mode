@@ -8,7 +8,7 @@ type Props = {
   add?: (amount: number) => void;
   decrement?: () => void;
   increment?: () => void;
-  mul?: (amount: number) => void;
+  mul2?: (amount: number) => void;
 };
 
 const CounterBoard: FC<Props> = ({
@@ -16,7 +16,7 @@ const CounterBoard: FC<Props> = ({
   add = () => undefined,
   decrement = () => undefined,
   increment = () => undefined,
-  mul = () => undefined,
+  mul2 = () => undefined,
 }) => (
   <Card>
     <Statistic className="number-board">
@@ -38,7 +38,7 @@ const CounterBoard: FC<Props> = ({
         </Button>
       </div>
       <div className="double-button">
-        <Button fluid color="blue" onClick={() => mul(BULK_UNIT)}>
+        <Button fluid color="blue" onClick={() => mul2(BULK_UNIT)}>
           ×{BULK_UNIT}
         </Button>
       </div>
