@@ -35,6 +35,11 @@ const CounterBoard: FC<Props> = ({
           +{BULK_UNIT}
         </Button>
       </div>
+      <div className="double-button">
+        <Button fluid color="blue" onClick={() => add(count)}>
+          ×2
+        </Button>
+      </div>
     </Card.Content>
   </Card>
 );
