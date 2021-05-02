@@ -48,9 +48,8 @@ const CounterBoard: FC<Props> = ({
           value={mulValue}
           onChange={(e) => changeMulValue(Number(e.target.value))}
         />
-        <Button positive>決定</Button>
-        <Button fluid color="blue" onClick={() => mul2(BULK_UNIT)}>
-          ×{BULK_UNIT}
+        <Button fluid color="blue" onClick={() => mul2(mulValue)}>
+          ×{mulValue}
         </Button>
       </div>
     </Card.Content>
