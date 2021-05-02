@@ -3,9 +3,13 @@ import { CounterAction, CounterActionType as Type } from 'actions';
 
 export type CounterState = {
   count: number;
+  mulValue: number;
 };
 
-export const initialState: CounterState = { count: 0 };
+export const initialState: CounterState = {
+  count: 0,
+  mulValue: 0,
+};
 
 export const counterReducer: Reducer<CounterState, CounterAction> = (
   state: CounterState = initialState,
@@ -32,9 +36,12 @@ export const counterReducer: Reducer<CounterState, CounterAction> = (
         ...state,
         count: state.count * (action.amount || 0),
       };
+    case Type.CHANGE_MUL_VALUE:
+      return {
+        ...state,
+        mulValue: action.amount || 0,
+      };
     default: {
-      const _: never = action.type;
-
       return state;
     }
   }
