@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja"></html>
 
+<link rel="stylesheet" href="css/styles.css">
+
 <head>
     <meta charset="UTF-8">
     <title>My Web Page</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css"> <!-- CSSファイルの読み込み -->
 </head>
-<body>
+<body class="body">
     <header class="header">
-        <h1>Welcome to My Website</h1>
+        <h1 class="logo">sample site</h1>
+        <nav class="global-nav">
+            <ul>
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="#">news</a></li>
+                <li class="nav-item"><a href="#">topics</a></li>
+                <li class="nav-item"><a href="#">docs</a></li>
+                <li class="nav-item"><a href="#">blog</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="wrapper">
-        <main class="main">
-            <p>This is a simple HTML page with external CSS.</p>
-        </main>
+        <div class="main">
+            <div class="hot-topic">
+                <img src="images/hot-topic.jpg" alt="hot topic">
+                <div class="contents">
+                    <p class="date">2015.09.01 TUE</p>
+                    <p class="title">実務で使えるHTML/CSS</p>
+                    <p class="subtitle">モダンコーディングTIPS</p>
+                    <p class="text">Webフロントエンドの進化の勢いはとどまるところを知りません。新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用して...</p>
+                </div>
+            </div>
+            <div class="news">
+                <img src="images/news.jpg" alt="news">
+            </div>
+            <div class="articles">
+                <h2>articles</h2>
+            </div>
+        </div>
         <div class="sidemenu">
-            <p>This is a sidemenu.</p>
+            <div class="ranking">
+                <h2>ranking</h2>
+            </div>
+            <div class="documents">
+                <h2>documents</h2>
+            </div>
+            <div class="search">
+                <h2>search</h2>
+            </div>
         </div>
     </div>
     <footer class="footer">
-        <p>&copy; 2025 Your Name</p>
+        <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="#">about me</a></li>
+            <li class="footer-nav-item"><a href="#">site map</a></li>
+            <li class="footer-nav-item"><a href="#">sns</a></li>
+            <li class="footer-nav-item"><a href="#">contact</a></li>
+        </ul>
+        <div class="copyright">
+            <p>Copyright © 2015 sample site</p>
+        </div>
     </footer>
 </body>
 </html>
