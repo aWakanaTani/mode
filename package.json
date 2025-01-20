@@ -1,0 +1,10 @@
+{
+  "name": "mode",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost --open=index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
